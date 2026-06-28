@@ -1,1 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Annual Function Gallery</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+background:#f5f5f5;
+font-family:Poppins,sans-serif;
+}
+
+.top{
+background:#0d47a1;
+color:#fff;
+padding:20px;
+text-align:center;
+}
+
+.back{
+display:inline-block;
+margin-top:10px;
+padding:10px 20px;
+background:#fff;
+color:#0d47a1;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.gallery-grid{
+width:95%;
+margin:30px auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.gallery-grid img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+cursor:pointer;
+transition:.4s;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
+.lightbox{
+display:none;
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.9);
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.lightbox img{
+max-width:90%;
+max-height:90%;
+border-radius:10px;
+}
+
+.close{
+position:absolute;
+top:20px;
+right:35px;
+font-size:45px;
+color:white;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="top">
+
+<h1>🏆 Annual Function Gallery</h1>
+
+<a href="index.html" class="back">⬅ Back Home</a>
+
+</div>
+
+<div class="gallery-grid">
+
+<img src="https://raw.githubusercontent.com/littleangelP/gallery-slider/main/1%20(1).jpeg" onclick="openImage(this.src)">
+<img src="https://raw.githubusercontent.com/littleangelP/gallery-slider/main/1%20(2).jpeg" onclick="openImage(this.src)">
+<img src="https://raw.githubusercontent.com/littleangelP/gallery-slider/main/1%20(3).jpeg" onclick="openImage(this.src)">
+<img src="https://raw.githubusercontent.com/littleangelP/gallery-slider/main/1%20(4).jpeg" onclick="openImage(this.src)">
+<img src="https://raw.githubusercontent.com/littleangelP/gallery-slider/main/1%20(5).jpeg" onclick="openImage(this.src)">
+<img src="https://raw.githubusercontent.com/littleangelP/gallery-slider/main/1%20(6).jpeg" onclick="openImage(this.src)">
+<img src="https://raw.githubusercontent.com/littleangelP/gallery-slider/main/1%20(7).jpeg" onclick="openImage(this.src)">
+<img src="https://raw.githubusercontent.com/littleangelP/gallery-slider/main/1%20(8).jpeg" onclick="openImage(this.src)">
+<img src="https://raw.githubusercontent.com/littleangelP/gallery-slider/main/1%20(9).jpeg" onclick="openImage(this.src)">
+
+</div>
+
+<div class="lightbox" id="lightbox" onclick="closeImage()">
+
+<span class="close">&times;</span>
+
+<img id="lightbox-img">
+
+</div>
+
+<script>
+
+const lightbox=document.getElementById("lightbox");
+const img=document.getElementById("lightbox-img");
+
+function openImage(src){
+
+lightbox.style.display="flex";
+
+img.src=src;
+
+}
+
+function closeImage(){
+
+lightbox.style.display="none";
+
+}
+
+</script>
+
+</body>
+</html>
