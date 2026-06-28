@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Culture Program Gallery</title>
+<title>Cultural Program Gallery</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -16,7 +16,7 @@ font-family:Poppins,sans-serif;
 }
 
 .top{
-background:#0d47a1;
+background:#8e24aa;
 color:#fff;
 padding:20px;
 text-align:center;
@@ -27,7 +27,7 @@ display:inline-block;
 margin-top:10px;
 padding:10px 20px;
 background:#fff;
-color:#0d47a1;
+color:#8e24aa;
 text-decoration:none;
 border-radius:8px;
 font-weight:bold;
@@ -91,7 +91,7 @@ cursor:pointer;
 
 <div class="top">
 
-<h1>🏆 Culture Program Gallery</h1>
+<h1>🎭 Cultural Program Gallery</h1>
 
 <a href="index.html" class="back">⬅ Back Home</a>
 
@@ -112,34 +112,23 @@ cursor:pointer;
 </div>
 
 <div class="lightbox" id="lightbox" onclick="closeImage()">
-
 <span class="close">&times;</span>
-
 <img id="lightbox-img">
-
 </div>
 
 <script>
-
 const lightbox=document.getElementById("lightbox");
 const img=document.getElementById("lightbox-img");
 
 function openImage(src){
-
 lightbox.style.display="flex";
-
 img.src=src;
-
 }
 
 function closeImage(){
-
 lightbox.style.display="none";
-
 }
-
 </script>
 
 </body>
 </html>
-
