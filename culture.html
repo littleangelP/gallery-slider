@@ -111,9 +111,16 @@ cursor:pointer;
 
 </div>
 
-<div class="lightbox" id="lightbox" onclick="closeImage()">
-<span class="close">&times;</span>
+<div id="lightbox" class="lightbox">
+
+<span class="close-btn" onclick="closeImage()">&times;</span>
+
+<span class="prev-btn" onclick="prevImage()">❮</span>
+
 <img id="lightbox-img">
+
+<span class="next-btn" onclick="nextImage()">❯</span>
+
 </div>
 
 <script>
