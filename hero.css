@@ -26,7 +26,7 @@ body{
 
     width:100%;
 
-    height:100vh;
+    min-height:720px;
 
     overflow:hidden;
 
@@ -35,6 +35,8 @@ body{
     justify-content:center;
 
     align-items:center;
+
+    padding:80px 20px
 
 }
 
@@ -106,8 +108,10 @@ body{
 
     color:#fff;
 
-    max-width:900px;
+    max-width:1400px;
 
+    width:95%
+       
     padding:20px;
 
     animation:fadeUp 1.5s ease;
@@ -122,6 +126,8 @@ body{
 
     line-height:1.1;
 
+    white-space:nowrap;
+   
     text-shadow:0 5px 25px rgba(0,0,0,.5);
 
 }
@@ -142,7 +148,7 @@ body{
 
     font-size:22px auto;
 
-    line-height:1.87
+    line-height:1.7
 
     max-width:850px;
 
