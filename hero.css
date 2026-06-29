@@ -116,23 +116,21 @@ body{
 
 .hero-content h1{
 
-    font-size:64px;
+    font-size:68px;
 
     font-weight:800;
 
-    line-height:1.2;
+    line-height:1.1;
 
-    text-shadow:0 5px 20px rgba(0,0,0,.5);
+    text-shadow:0 5px 25px rgba(0,0,0,.5);
 
 }
 
 .hero-content h2{
 
-    margin-top:18px;
+    margin-top:15px;
 
-    font-size:30px;
-
-    font-weight:500;
+    font-size:32px;
 
     color:#FFD54F;
 
@@ -142,11 +140,11 @@ body{
 
     margin:25px auto;
 
-    font-size:20px;
+    font-size:22px auto;
 
-    line-height:1.8;
+    line-height:1.87
 
-    max-width:750px;
+    max-width:850px;
 
     color:#f5f5f5;
 
