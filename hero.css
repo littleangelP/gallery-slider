@@ -440,3 +440,11 @@ transform:translateY(0);
 }
 
 }
+@media(max-width:768px){
+
+.school-title{
+    white-space:normal;
+    font-size:32px;
+}
+
+}
