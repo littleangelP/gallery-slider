@@ -1,160 +1,219 @@
-/* ==========================
-   RESET
-========================== */
+/* ===========================================
+   LITTLE ANGEL'S PUBLIC SCHOOL
+   ACADEMICS PAGE
+   PART 1
+===========================================*/
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
-    font-family:'Poppins',sans-serif;
-    background:#f5f7fb;
-    color:#333;
-    line-height:1.7;
+
+font-family:'Poppins',sans-serif;
+background:#f4f8fc;
+color:#333;
+line-height:1.7;
+
 }
 
-/* ==========================
-   HERO SECTION
-========================== */
+/* ===========================================
+   HERO
+===========================================*/
 
 .hero{
-    position:relative;
-    height:420px;
-    background:url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+
+position:relative;
+
+height:520px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+background:url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+
+background-position:center;
+
+overflow:hidden;
+
 }
 
 .overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.55);
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,43,91,.70);
+
 }
 
 .hero-content{
-    position:relative;
-    z-index:2;
-    color:#fff;
-    width:90%;
-    max-width:900px;
+
+position:relative;
+
+z-index:2;
+
+width:90%;
+
+max-width:900px;
+
+color:#fff;
+
 }
 
 .hero-content h1{
-    font-size:58px;
-    font-weight:800;
-    margin-bottom:20px;
+
+font-size:65px;
+
+font-weight:800;
+
+margin-bottom:20px;
+
+text-shadow:0 5px 15px rgba(0,0,0,.35);
+
+}
+
+.hero-content h3{
+
+font-size:28px;
+
+font-weight:500;
+
+color:#FFD54F;
+
+margin-bottom:25px;
+
 }
 
 .hero-content p{
-    font-size:20px;
-    line-height:1.8;
+
+font-size:20px;
+
+line-height:1.9;
+
 }
 
-/* ==========================
-   INTRO SECTION
-========================== */
+/* ===========================================
+INTRO
+===========================================*/
 
 .intro{
 
-    width:90%;
-    max-width:1100px;
+width:90%;
 
-    margin:70px auto;
+max-width:1200px;
 
-    text-align:center;
+margin:90px auto;
+
+text-align:center;
 
 }
 
 .intro h2{
 
-    color:#0D47A1;
+font-size:42px;
 
-    font-size:38px;
+color:#0D47A1;
 
-    margin-bottom:25px;
+margin-bottom:25px;
 
 }
 
 .intro p{
 
-    font-size:18px;
+font-size:19px;
 
-    color:#555;
+color:#555;
 
 }
 
-/* ==========================
-   CARDS
-========================== */
+/* ===========================================
+ACADEMIC CARDS
+===========================================*/
 
 .cards{
 
-    width:90%;
-    max-width:1200px;
+width:90%;
 
-    margin:60px auto;
+max-width:1250px;
 
-    display:grid;
+margin:70px auto;
 
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+display:grid;
 
-    gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
 
 }
 
 .card{
 
-    background:#fff;
+background:#fff;
 
-    border-radius:20px;
+padding:40px;
 
-    padding:35px;
+border-radius:20px;
 
-    text-align:center;
+text-align:center;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+box-shadow:0 12px 30px rgba(0,0,0,.08);
 
-    transition:.4s;
+transition:.35s;
 
 }
 
 .card:hover{
 
-    transform:translateY(-10px);
-
-    box-shadow:0 20px 40px rgba(0,0,0,.15);
+transform:translateY(-12px);
 
 }
 
 .card i{
 
-    font-size:55px;
+font-size:60px;
 
-    color:#1565C0;
+color:#1565C0;
 
-    margin-bottom:20px;
+margin-bottom:20px;
 
 }
 
 .card h3{
 
-    color:#0D47A1;
+font-size:28px;
 
-    margin-bottom:15px;
+color:#0D47A1;
 
-    font-size:26px;
+margin-bottom:18px;
 
 }
 
 .card p{
 
-    color:#666;
+font-size:17px;
 
-    font-size:17px;
+color:#666;
+
+line-height:1.8;
 
 }
 /* ===========================================
@@ -164,79 +223,348 @@ body{
 .highlights{
     width:90%;
     max-width:1200px;
-    margin:80px auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-    gap:25px;
+    margin:90px auto;
 }
 
-.highlight-card{
+.highlights h2{
+    text-align:center;
+    font-size:42px;
+    color:#0D47A1;
+    margin-bottom:50px;
+}
+
+.highlight-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.highlight-box{
     background:linear-gradient(135deg,#0D47A1,#1976D2);
     color:#fff;
-    padding:35px 25px;
-    border-radius:18px;
+    padding:40px 25px;
     text-align:center;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
     transition:.35s;
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
 }
 
-.highlight-card:hover{
-    transform:translateY(-8px);
+.highlight-box:hover{
+    transform:translateY(-10px);
 }
 
-.highlight-card h2{
+.highlight-box i{
+    font-size:55px;
+    color:#FFD54F;
+    margin-bottom:18px;
+}
+
+.highlight-box h3{
     font-size:42px;
     margin-bottom:10px;
-    color:#FFD54F;
 }
 
-.highlight-card p{
+.highlight-box p{
     font-size:18px;
 }
 
 
 /* ===========================================
-   SUBJECT SECTION
+   CURRICULUM
 =========================================== */
 
-.subjects{
+.curriculum{
     width:90%;
     max-width:1200px;
-    margin:80px auto;
+    margin:100px auto;
 }
 
-.subjects h2{
+.curriculum h2{
+    text-align:center;
+    font-size:42px;
+    color:#0D47A1;
+    margin-bottom:25px;
+}
+
+.curriculum>p{
+    text-align:center;
+    font-size:18px;
+    color:#555;
+    max-width:900px;
+    margin:0 auto 50px;
+}
+
+.curriculum-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.subject-card{
+    background:#fff;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.subject-card:hover{
+    transform:translateY(-10px);
+}
+
+.subject-card i{
+    font-size:55px;
+    color:#1565C0;
+    margin-bottom:20px;
+}
+
+.subject-card h3{
+    font-size:26px;
+    color:#0D47A1;
+    margin-bottom:15px;
+}
+
+.subject-card p{
+    color:#666;
+    font-size:16px;
+    line-height:1.8;
+}
+/* ===========================================
+   TEACHING METHODOLOGY
+=========================================== */
+
+.methodology{
+    width:90%;
+    max-width:1200px;
+    margin:100px auto;
+}
+
+.methodology h2{
+    text-align:center;
+    font-size:42px;
+    color:#0D47A1;
+    margin-bottom:25px;
+}
+
+.section-text{
+    text-align:center;
+    max-width:900px;
+    margin:0 auto 50px;
+    font-size:18px;
+    color:#555;
+}
+
+.method-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.method-card{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.method-card:hover{
+    transform:translateY(-10px);
+}
+
+.method-card i{
+    font-size:55px;
+    color:#1565C0;
+    margin-bottom:20px;
+}
+
+.method-card h3{
+    color:#0D47A1;
+    margin-bottom:15px;
+}
+
+.method-card p{
+    color:#666;
+}
+
+
+/* ===========================================
+   LAB SECTION
+=========================================== */
+
+.labs{
+    width:90%;
+    max-width:1200px;
+    margin:100px auto;
+}
+
+.labs h2{
     text-align:center;
     color:#0D47A1;
-    font-size:38px;
-    margin-bottom:40px;
+    font-size:42px;
+    margin-bottom:50px;
 }
 
-.subject-grid{
+.lab-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
 }
 
-.subject{
+.lab-card{
     background:#fff;
-    padding:25px;
-    border-radius:18px;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-    transition:.3s;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.35s;
 }
 
-.subject:hover{
-    transform:translateY(-8px);
+.lab-card:hover{
+    transform:translateY(-10px);
 }
 
-.subject h3{
+.lab-card i{
+    font-size:55px;
     color:#1565C0;
-    margin-bottom:12px;
+    margin-bottom:20px;
 }
 
-.subject p{
+.lab-card h3{
+    color:#0D47A1;
+    margin-bottom:15px;
+}
+
+.lab-card p{
     color:#666;
+    line-height:1.8;
+}
+
+
+/* ===========================================
+   ASSESSMENT
+=========================================== */
+
+.assessment{
+    width:90%;
+    max-width:1100px;
+    margin:100px auto;
+    background:#fff;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.assessment h2{
+    color:#0D47A1;
+    text-align:center;
+    margin-bottom:25px;
+    font-size:40px;
+}
+
+.assessment p{
+    text-align:center;
+    color:#555;
+    margin-bottom:30px;
+}
+
+.assessment ul{
+    list-style:none;
+    max-width:500px;
+    margin:auto;
+}
+
+.assessment li{
+    padding:12px 0;
+    font-size:17px;
+    border-bottom:1px solid #eee;
+}
+
+
+/* ===========================================
+   ACTIVITIES
+=========================================== */
+
+.activities{
+    width:90%;
+    max-width:1200px;
+    margin:100px auto;
+}
+
+.activities h2{
+    text-align:center;
+    font-size:42px;
+    color:#0D47A1;
+    margin-bottom:25px;
+}
+
+.activity-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.activity-card{
+    background:#fff;
+    padding:35px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.activity-card:hover{
+    transform:translateY(-10px);
+}
+
+.activity-card i{
+    font-size:55px;
+    color:#1565C0;
+    margin-bottom:20px;
+}
+
+.activity-card h3{
+    color:#0D47A1;
+    margin-bottom:15px;
+}
+
+.activity-card p{
+    color:#666;
+}
+
+
+/* ===========================================
+   WHY CHOOSE US
+=========================================== */
+
+.why-us{
+    width:90%;
+    max-width:1200px;
+    margin:100px auto;
+}
+
+.why-us h2{
+    text-align:center;
+    color:#0D47A1;
+    margin-bottom:40px;
+    font-size:42px;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.why-grid div{
+    background:#1565C0;
+    color:#fff;
+    padding:20px;
+    border-radius:15px;
+    font-weight:600;
 }
 
 
@@ -247,8 +575,8 @@ body{
 .cta{
     width:90%;
     max-width:1200px;
-    margin:80px auto;
-    padding:60px 30px;
+    margin:100px auto;
+    padding:70px 30px;
     text-align:center;
     background:linear-gradient(135deg,#0D47A1,#1976D2);
     color:#fff;
@@ -256,67 +584,107 @@ body{
 }
 
 .cta h2{
-    font-size:42px;
+    font-size:45px;
     margin-bottom:20px;
 }
 
 .cta p{
+    max-width:800px;
+    margin:auto auto 35px;
     font-size:18px;
-    margin-bottom:30px;
 }
 
-.cta a{
+.btn{
     display:inline-block;
-    padding:15px 35px;
     background:#FFD54F;
     color:#0D47A1;
+    padding:16px 35px;
+    border-radius:40px;
     text-decoration:none;
-    border-radius:50px;
-    font-weight:bold;
+    font-weight:700;
     transition:.3s;
 }
 
-.cta a:hover{
+.btn:hover{
     background:#fff;
 }
 
 
 /* ===========================================
-   MOBILE
+   FOOTER
+=========================================== */
+
+footer{
+    background:#002b5b;
+    color:#fff;
+    text-align:center;
+    padding:45px 20px;
+}
+
+footer h3{
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+
+/* ===========================================
+   MOBILE RESPONSIVE
 =========================================== */
 
 @media(max-width:768px){
 
 .hero{
-    height:300px;
+height:340px;
 }
 
 .hero-content h1{
-    font-size:34px;
+font-size:38px;
+}
+
+.hero-content h3{
+font-size:20px;
 }
 
 .hero-content p{
-    font-size:16px;
+font-size:16px;
 }
 
 .intro h2,
-.subjects h2,
+.highlights h2,
+.curriculum h2,
+.methodology h2,
+.labs h2,
+.activities h2,
+.why-us h2,
+.assessment h2,
 .cta h2{
-    font-size:28px;
+font-size:30px;
 }
 
-.intro p,
-.subject p,
-.card p{
-    font-size:15px;
+.card,
+.subject-card,
+.method-card,
+.lab-card,
+.activity-card{
+padding:25px;
 }
 
-.card{
-    padding:25px;
+.assessment{
+padding:30px 20px;
 }
 
-.highlight-card h2{
-    font-size:34px;
+.cta{
+padding:50px 20px;
+}
+
+.btn{
+display:block;
+width:100%;
+max-width:320px;
+margin:auto;
 }
 
 }
