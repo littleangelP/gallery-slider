@@ -1,0 +1,322 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.7;
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero{
+    position:relative;
+    height:420px;
+    background:url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.55);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:#fff;
+    width:90%;
+    max-width:900px;
+}
+
+.hero-content h1{
+    font-size:58px;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+/* ==========================
+   INTRO SECTION
+========================== */
+
+.intro{
+
+    width:90%;
+    max-width:1100px;
+
+    margin:70px auto;
+
+    text-align:center;
+
+}
+
+.intro h2{
+
+    color:#0D47A1;
+
+    font-size:38px;
+
+    margin-bottom:25px;
+
+}
+
+.intro p{
+
+    font-size:18px;
+
+    color:#555;
+
+}
+
+/* ==========================
+   CARDS
+========================== */
+
+.cards{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:60px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.card i{
+
+    font-size:55px;
+
+    color:#1565C0;
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    color:#0D47A1;
+
+    margin-bottom:15px;
+
+    font-size:26px;
+
+}
+
+.card p{
+
+    color:#666;
+
+    font-size:17px;
+
+}
+/* ===========================================
+   ACADEMIC HIGHLIGHTS
+=========================================== */
+
+.highlights{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+.highlight-card{
+    background:linear-gradient(135deg,#0D47A1,#1976D2);
+    color:#fff;
+    padding:35px 25px;
+    border-radius:18px;
+    text-align:center;
+    transition:.35s;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.highlight-card:hover{
+    transform:translateY(-8px);
+}
+
+.highlight-card h2{
+    font-size:42px;
+    margin-bottom:10px;
+    color:#FFD54F;
+}
+
+.highlight-card p{
+    font-size:18px;
+}
+
+
+/* ===========================================
+   SUBJECT SECTION
+=========================================== */
+
+.subjects{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+}
+
+.subjects h2{
+    text-align:center;
+    color:#0D47A1;
+    font-size:38px;
+    margin-bottom:40px;
+}
+
+.subject-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.subject{
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.subject:hover{
+    transform:translateY(-8px);
+}
+
+.subject h3{
+    color:#1565C0;
+    margin-bottom:12px;
+}
+
+.subject p{
+    color:#666;
+}
+
+
+/* ===========================================
+   CTA
+=========================================== */
+
+.cta{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+    padding:60px 30px;
+    text-align:center;
+    background:linear-gradient(135deg,#0D47A1,#1976D2);
+    color:#fff;
+    border-radius:25px;
+}
+
+.cta h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.cta p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.cta a{
+    display:inline-block;
+    padding:15px 35px;
+    background:#FFD54F;
+    color:#0D47A1;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.cta a:hover{
+    background:#fff;
+}
+
+
+/* ===========================================
+   MOBILE
+=========================================== */
+
+@media(max-width:768px){
+
+.hero{
+    height:300px;
+}
+
+.hero-content h1{
+    font-size:34px;
+}
+
+.hero-content p{
+    font-size:16px;
+}
+
+.intro h2,
+.subjects h2,
+.cta h2{
+    font-size:28px;
+}
+
+.intro p,
+.subject p,
+.card p{
+    font-size:15px;
+}
+
+.card{
+    padding:25px;
+}
+
+.highlight-card h2{
+    font-size:34px;
+}
+
+}
